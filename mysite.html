@@ -9,27 +9,74 @@ body{
   color: grey;
 }
 
-div {
-  width: 900px;
-  padding: 50px;
-  margin: 50px;
+ul.a {
+  list-style-type: circle;
 }
+
 
 h1{
   color: light grey;
 }
 
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(137, 35, 248);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px;
+  font-size: 28px; 
+  padding: 0px 20px;
+}
+
+
 </style>
 </head>
 <body>
-<div>
+<div class="sidenav">
+  <a href="mysite.html">About</a>
+  <a href="index.html">Index</a>
+  <a href="contact.html">Contact</a>
+  <a href="tips.html">Beginners</a>
+</div>
+<div class="main">
 <h1>Welcome to my page</h1>
 <p>
-Welcome, weary traveller. 
+Welcome, weary traveller. <img src="frog wizard.jpg" align="middle" >
 </p>
-<a href="mysitemenu.html">Behold my humble wares.</a>
+<h3>Behold my humble wares.</h3>
+<ul class="a">
+  <li>stick</li>
+  <img src="stick.jpeg">
+  <li>rock</li>
+  <img src="rock.jpeg">
+  <li>mud</li>
+  <img src="mud.jpeg">
+  <li>shiny rock</li>
+  <img src="shiny.jpeg">
+  <li>plant</li>
+  <img src="plant.jpeg">
+</ul>
 
-<img src="frog wizard.jpg" >
 </div>
 </body>
 </html>

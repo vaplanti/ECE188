@@ -1,27 +1,62 @@
 <html>
 <head>
-<title> Navigation </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body{
-	background-color: pink;
-	font:verdana;
-}
-div {
-  width: 900px;
-  padding: 50px;
-  margin: 50px;
+body {
+  font-family: "Lato", sans-serif;
+  
+  background-color: rgb(200, 227, 255);
 }
 
-</head>
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 212, 250);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px;
+  font-size: 20px; 
+  padding: 0px 10px;
+}
+
+
 </style>
+</head>
 <body>
-<div>
-<h1 style="color:white;">Where do you want to go?</h1>
 
-<a href="mysite.html">Basic Info</a>
-
-<br>
-
-<a href="contact.html">Contact</a>
+<div class="sidenav">
+  <a href="mysite.html">About</a>
+  <a href="index.html">Index</a>
+  <a href="contact.html">Contact</a>
+  <a href="tips.html">Beginners</a>
 </div>
+
+<div class="main">
+  <h2> This is your map across the land of Magic.</h2>
+  
+  <img src="map.jpg" width="700" height="700">
+  <p>You are in there somewhere. Or possibly you're fallen off. If that is the case, chill out! The worst has aready happened. Probably. Hopefully.  </p>
+  <p>They say there's giant squids and such down there.</p>
+</div>
+   
 </body>
+</html> 
